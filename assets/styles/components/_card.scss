@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the card component.
+// -----------------------------------------------------------------------------
+
+
+.card {
+  display: grid;
+  width: min(100%, 26rem);
+  gap: 1rem;
+  padding: 1.8rem;
+  background-color: $dk-blue;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  transition: ease background-color 0.2s;
+}

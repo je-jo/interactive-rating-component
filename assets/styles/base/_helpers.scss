@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  width: min(100%, 150ch);
+  margin: 0 auto;
+  padding: clamp(0.3rem, 3vw, 3rem);
+}
+
+.wrapper-rating {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+

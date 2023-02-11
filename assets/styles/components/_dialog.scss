@@ -1,0 +1,10 @@
+dialog {
+    margin: auto;
+    border: 1px solid $bg-color;
+    border-radius: calc($border-radius / 2);
+    transition: $transition;
+}
+
+dialog::backdrop {
+    background: change-color($vdk-blue, $alpha: 0.8);
+}

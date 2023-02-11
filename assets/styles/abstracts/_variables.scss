@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+/// Regular font family
+
+$sans-serif-stack: 'Overpass', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+/// Colors
+
+$primary: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lg-grey: hsl(217, 12%, 63%);
+$md-grey: hsl(216, 12%, 54%);
+$dk-blue: hsl(213, 19%, 18%);
+$vdk-blue: hsl(216, 12%, 8%);
+
+/// Font sizes
+/* $fs-h1:  4rem;
+$fs-h2: 1.8rem;
+$fs-lead: 1.125rem; */
+$para: 15px;
+
+
+///Design variables
+// $min-card-width: 17rem;
+$border-radius: 8px;
+$transition: ease all 0.2s;
+$box-shadow: 0 3px 5px change-color($vdk-blue, $alpha: 0.28);

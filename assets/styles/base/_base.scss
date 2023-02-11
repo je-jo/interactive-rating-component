@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/// Set base colors
+$bg-color: $vdk-blue;
+$text-color: $lg-grey;
+$accent: $primary;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  &:focus-visible {
+    outline: 3px dotted $accent;
+    outline-offset: 3px;
+  }
+  // outline: 1px solid blue;
+}
+
+body {
+  font-family: $sans-serif-stack;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: inherit;
+  // text-decoration: underline;
+  text-underline-offset: 6px;
+  &:hover {
+    color: $accent;
+    transition: $transition;
+  }
+}
