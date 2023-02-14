@@ -6,10 +6,18 @@
 .card {
   display: grid;
   width: min(100%, 26rem);
-  gap: 1rem;
-  padding: 1.8rem;
+  gap: 0.8rem;
+  padding: 1.6rem;
   background-color: $dk-blue;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
   transition: ease background-color 0.2s;
+}
+
+.wrapper-icon {
+  background-color: $dk-blue;
+  width: max-content;
+  margin-bottom: 0.5rem;
+  padding: 0.7em;
+  border-radius: 50%;
 }

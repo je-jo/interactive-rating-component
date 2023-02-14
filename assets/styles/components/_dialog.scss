@@ -3,8 +3,13 @@ dialog {
     border: 1px solid $bg-color;
     border-radius: calc($border-radius / 2);
     transition: $transition;
+    color: inherit;
+}
+
+dialog > .card {
+    width: max-content;
 }
 
 dialog::backdrop {
-    background: change-color($vdk-blue, $alpha: 0.8);
+    background: $vdk-blue;
 }

@@ -14,9 +14,11 @@ button {
     min-width: 10ch;
     min-height: 44px;
     padding: 0.1em 0.8em;
+    font-size: 0.9rem;
+    letter-spacing: 2.2px;
     transition: $transition;
-    border: 1px solid currentColor;
-    border-radius: $border-radius;
+    border: 1px solid $button-bg-color;
+    border-radius: 25px;
     background-color: $button-bg-color;
     color: $button-text-color;
     line-height: 1.1;

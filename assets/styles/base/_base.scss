@@ -23,6 +23,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   place-items: center;
+  line-height: unset;
   background-color: $bg-color;
   color: $text-color;
 }

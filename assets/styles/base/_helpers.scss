@@ -8,13 +8,13 @@
   place-items: center;
   width: min(100%, 150ch);
   margin: 0 auto;
-  padding: clamp(0.3rem, 3vw, 3rem);
+  padding: clamp(1.4rem, 3vw, 3rem);
 }
 
 .wrapper-rating {
+  margin: 0.8rem 0;
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
 }
 
 .sr-only {
