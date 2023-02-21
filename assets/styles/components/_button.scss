@@ -33,4 +33,7 @@ button {
         background-color: $dk-blue;
         border: none;
     }
+    @media screen and (min-width: 36rem) {
+        margin-top: -1rem;
+    }
 }

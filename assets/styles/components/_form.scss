@@ -1,6 +1,12 @@
 form {
     display: grid;
     gap: 1rem;
+
+    @media screen and (min-width: 36rem) {
+        margin-top: -0.9rem;
+        gap: 2.5rem;
+    }
+
 }
 
 fieldset {
@@ -35,7 +41,7 @@ label {
         outline-offset: 3px;
     }
 
-    @media screen and (min-width: 576px) {
+    @media screen and (min-width: 36rem) {
         width: 3rem;
         height: 3rem;
     }
@@ -51,4 +57,3 @@ input[type="radio"] {
         outline: none; //labels get outline with focus-within
     }
 }
-

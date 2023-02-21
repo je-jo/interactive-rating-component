@@ -10,6 +10,11 @@
   padding: 1.6rem;
   background: linear-gradient(to bottom, hsl(215, 20%, 16%) 0%, hsl(215, 27%, 12%) 100%);
   border-radius: $border-radius;
+
+  @media screen and (min-width: 36rem) {
+    padding: 2.4rem;
+    gap: 1.8rem;
+  }
 }
 
 .wrapper-icon {

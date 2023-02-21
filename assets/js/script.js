@@ -8,7 +8,7 @@ buttons.forEach((button) =>
   button.addEventListener("click", (e) => {
     btnSubmit.removeAttribute("disabled");
     rating = e.target.value;
-    output.textContent = `\xa0${rating}\xa0`;
+    output.textContent = rating;
   })
 );
 

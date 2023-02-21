@@ -3,18 +3,22 @@ dialog {
     margin: auto;
     text-align: center;
     color: inherit;
-    background-color: transparent;  
+    background-color: transparent;
     border: none;
     transition: $transition;
-    
 }
 
 .dialog-body {
     justify-items: center;
     text-align: center;
-    padding-bottom: 2rem;
+
     & img {
         max-width: 146px;
+    }
+
+    &.card {
+        padding: 2.2rem 1.6rem;
+        gap: 0.5rem;
     }
 }
 

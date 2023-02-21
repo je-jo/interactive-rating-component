@@ -3,6 +3,9 @@
  */
 
 h2 {
+  font-size: $fs-h2;
+  font-size: min(max(1.5rem, 3vw), $fs-h2);
+  font-size: clamp($fs-h2, 1.46rem + 0.3vw, 1.7rem);
   color: $white;
 }
 
@@ -12,19 +15,17 @@ h2 {
 } */
 
 p {
-  font-size: 15px;
+  font-size: $para;
   line-height: 1.5;
   letter-spacing: -0.4px;
 }
 
 .lead {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   color: $accent;
   margin: 1rem 0;
   background-color: $dk-blue;
   border-radius: 25px;
   padding: 0.4rem 0.7rem;
 }
-
-
