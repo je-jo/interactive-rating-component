@@ -17,4 +17,12 @@ form.addEventListener("submit", (e) => {
   modal.showModal();
 });
 
-modal.addEventListener("click", () => modal.close()); //click anywhere to close modal
+modal.addEventListener("click", () => {
+  modal.close(); //click anywhere to close modal
+});
+
+modal.addEventListener("close", () => {
+  rating = null;
+  btnSubmit.setAttribute("disabled", true);
+});
+

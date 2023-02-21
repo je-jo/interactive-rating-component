@@ -245,21 +245,22 @@ form {
 }
 
 fieldset {
-  -webkit-padding-before: 0.8rem;
-          padding-block-start: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  justify-content: space-between;
   border: none;
 }
 
-.wrapper-rating {
-  margin: 0.8rem 0 0.7rem;
-  display: flex;
-  justify-content: space-between;
+legend {
+  margin-bottom: 2rem;
 }
 
 label {
   background-color: hsl(213deg, 19%, 18%);
   width: 2.5rem;
   height: 2.5rem;
+  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
