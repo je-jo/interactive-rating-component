@@ -134,19 +134,18 @@ h2 {
   color: hsl(0deg, 0%, 100%);
 }
 
-p {
+p, legend {
   font-size: 15px;
   line-height: 1.5;
   letter-spacing: -0.4px;
 }
-
 @media screen and (min-width: 36rem) {
-  .lead {
+  p, legend {
     font-size: 1rem;
   }
 }
 
-.deco {
+.lead {
   color: hsl(25deg, 97%, 53%);
   margin: 1rem 0;
   background-color: hsl(213deg, 19%, 18%);
@@ -322,7 +321,7 @@ dialog {
 }
 @media screen and (min-width: 36rem) {
   .dialog-body.card {
-    padding: 2rem;
+    padding: 2rem 2.3rem;
     gap: 1rem;
   }
 }

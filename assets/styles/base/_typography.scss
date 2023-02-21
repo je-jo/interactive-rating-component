@@ -8,19 +8,16 @@ h2 {
   color: $white;
 }
 
-p {
+p, legend {
   font-size: $para;
   line-height: 1.5;
   letter-spacing: -0.4px;
-}
-
-.lead {
   @media screen and (min-width: 36rem) {
     font-size: 1rem;
   }
 }
 
-.deco {
+.lead {
   color: $accent;
   margin: 1rem 0;
   background-color: $dk-blue;
