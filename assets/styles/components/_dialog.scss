@@ -14,11 +14,18 @@ dialog {
 
     & img {
         max-width: 146px;
+        @media screen and (min-width: 36rem) {
+            max-width: 100%;
+          }
     }
 
     &.card {
         padding: 2.2rem 1.6rem;
         gap: 0.5rem;
+        @media screen and (min-width: 36rem) {
+            padding: 2rem;
+            gap: 1rem;
+          }
     }
 }
 

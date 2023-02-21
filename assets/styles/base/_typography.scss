@@ -4,15 +4,9 @@
 
 h2 {
   font-size: $fs-h2;
-  font-size: min(max(1.5rem, 3vw), $fs-h2);
   font-size: clamp($fs-h2, 1.46rem + 0.3vw, 1.7rem);
   color: $white;
 }
-
-/* h2 {
-  font-size: $fs-h2;
-  font-size: min(max(1.5rem, 3vw), $fs-h2);
-} */
 
 p {
   font-size: $para;
@@ -21,8 +15,12 @@ p {
 }
 
 .lead {
-  // display: flex;
-  // align-items: center;
+  @media screen and (min-width: 36rem) {
+    font-size: 1rem;
+  }
+}
+
+.deco {
   color: $accent;
   margin: 1rem 0;
   background-color: $dk-blue;

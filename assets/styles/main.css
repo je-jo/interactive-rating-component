@@ -130,22 +130,23 @@ a:hover {
  */
 h2 {
   font-size: 1.5em;
-  font-size: min(max(1.5rem, 3vw), 1.5em);
   font-size: clamp(1.5em, 1.46rem + 0.3vw, 1.7rem);
   color: hsl(0deg, 0%, 100%);
 }
 
-/* h2 {
-  font-size: $fs-h2;
-  font-size: min(max(1.5rem, 3vw), $fs-h2);
-} */
 p {
   font-size: 15px;
   line-height: 1.5;
   letter-spacing: -0.4px;
 }
 
-.lead {
+@media screen and (min-width: 36rem) {
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+.deco {
   color: hsl(25deg, 97%, 53%);
   margin: 1rem 0;
   background-color: hsl(213deg, 19%, 18%);
@@ -310,9 +311,20 @@ dialog {
 .dialog-body img {
   max-width: 146px;
 }
+@media screen and (min-width: 36rem) {
+  .dialog-body img {
+    max-width: 100%;
+  }
+}
 .dialog-body.card {
   padding: 2.2rem 1.6rem;
   gap: 0.5rem;
+}
+@media screen and (min-width: 36rem) {
+  .dialog-body.card {
+    padding: 2rem;
+    gap: 1rem;
+  }
 }
 
 dialog::backdrop {
