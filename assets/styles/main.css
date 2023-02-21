@@ -132,34 +132,32 @@ h2 {
   color: hsl(0deg, 0%, 100%);
 }
 
+/* h2 {
+  font-size: $fs-h2;
+  font-size: min(max(1.5rem, 3vw), $fs-h2);
+} */
 p {
   font-size: 15px;
   line-height: 1.5;
   letter-spacing: -0.4px;
 }
 
-/* h1 {
-  font-size: $fs-h1;
-  font-size: min(max(3rem, 5vw), $fs-h1);
-  text-align: center;
+.lead {
+  display: flex;
+  align-items: center;
+  color: hsl(25deg, 97%, 53%);
+  margin: 1rem 0;
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 25px;
+  padding: 0.4rem 0.7rem;
 }
 
-h2 {
-  font-size: $fs-h2;
-  font-size: min(max(1.5rem, 3vw), $fs-h2);
-} */
 .wrapper {
   display: grid;
   place-items: center;
   width: min(100%, 150ch);
   margin: 0 auto;
   padding: clamp(1.4rem, 3vw, 3rem);
-}
-
-.wrapper-rating {
-  margin: 0.8rem 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 .sr-only {
@@ -184,10 +182,8 @@ footer {
   width: min(100%, 26rem);
   gap: 0.8rem;
   padding: 1.6rem;
-  background-color: hsl(213deg, 19%, 18%);
+  background: linear-gradient(to bottom, hsl(215deg, 20%, 16%) 0%, hsl(215deg, 27%, 12%) 100%);
   border-radius: 25px;
-  box-shadow: 0 3px 5px rgba(18, 20, 23, 0.28);
-  transition: ease background-color 0.2s;
 }
 
 .wrapper-icon {
@@ -202,11 +198,9 @@ footer {
 button {
   display: inline-flex;
   align-items: center;
-  align-self: start;
   justify-content: center;
   min-width: 10ch;
   min-height: 44px;
-  padding: 0.1em 0.8em;
   font-size: 0.9rem;
   letter-spacing: 2.2px;
   transition: ease all 0.2s;
@@ -214,20 +208,38 @@ button {
   border-radius: 25px;
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
-  line-height: 1.1;
-  text-align: center;
   text-transform: uppercase;
-  text-decoration: none;
   cursor: pointer;
 }
-button:hover, button:focus {
+button:hover:not([disabled]), button:focus {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
   border-color: hsl(0deg, 0%, 100%);
 }
+button:disabled {
+  background-color: hsl(213deg, 19%, 18%);
+  border: none;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+fieldset {
+  -webkit-padding-before: 0.8rem;
+          padding-block-start: 0.8rem;
+  border: none;
+}
+
+.wrapper-rating {
+  margin: 0.8rem 0 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
 
 label {
-  background-color: #3e4b5b;
+  background-color: hsl(213deg, 19%, 18%);
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
@@ -235,10 +247,17 @@ label {
   justify-content: center;
   border-radius: 50%;
 }
-label:hover, label:focus-within {
-  background-color: hsl(25deg, 97%, 53%);
+label:hover {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
 }
-@media screen and (min-width: 768px) {
+label:focus-within {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  outline: 2px dotted hsl(25deg, 97%, 53%);
+  outline-offset: 3px;
+}
+@media screen and (min-width: 576px) {
   label {
     width: 3rem;
     height: 3rem;
@@ -249,21 +268,30 @@ input[type=radio] {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  background-color: #fff;
+  background-color: hsl(0deg, 0%, 100%);
   margin: 0;
+}
+input[type=radio]:focus {
+  outline: none;
 }
 
 dialog {
+  width: min(100%, 26rem);
   margin: auto;
-  border: 1px solid hsl(216deg, 12%, 8%);
-  border-radius: 12.5px;
-  transition: ease all 0.2s;
+  text-align: center;
   color: inherit;
+  background-color: transparent;
+  border: none;
+  transition: ease all 0.2s;
 }
 
-dialog > .card {
-  width: -moz-max-content;
-  width: max-content;
+.dialog-body {
+  justify-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.dialog-body img {
+  max-width: 146px;
 }
 
 dialog::backdrop {

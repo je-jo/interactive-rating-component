@@ -15,7 +15,6 @@ $accent: $primary;
     outline: 3px dotted $accent;
     outline-offset: 3px;
   }
-  // outline: 1px solid blue;
 }
 
 body {
@@ -33,7 +32,6 @@ body {
  */
 a {
   color: inherit;
-  // text-decoration: underline;
   text-underline-offset: 6px;
   &:hover {
     color: $accent;

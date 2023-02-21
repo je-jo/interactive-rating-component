@@ -1,13 +1,21 @@
 dialog {
+    width: min(100%, 26rem);
     margin: auto;
-    border: 1px solid $bg-color;
-    border-radius: calc($border-radius / 2);
-    transition: $transition;
+    text-align: center;
     color: inherit;
+    background-color: transparent;  
+    border: none;
+    transition: $transition;
+    
 }
 
-dialog > .card {
-    width: max-content;
+.dialog-body {
+    justify-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    & img {
+        max-width: 146px;
+    }
 }
 
 dialog::backdrop {

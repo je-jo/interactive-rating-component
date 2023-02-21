@@ -1,0 +1,54 @@
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+fieldset {
+    padding-block-start: 0.8rem;
+    border: none;
+}
+
+.wrapper-rating {
+    margin: 0.8rem 0 0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    background-color: $dk-blue;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    &:hover {
+        background-color: $md-grey;
+        color: $white;
+    }
+
+    &:focus-within {
+        background-color: $accent;
+        color: $white;
+        outline: 2px dotted $accent;
+        outline-offset: 3px;
+    }
+
+    @media screen and (min-width: 576px) {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $white;
+    margin: 0;
+
+    &:focus {
+        outline: none; //labels get outline with focus-within
+    }
+}
+
